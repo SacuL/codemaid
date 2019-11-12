@@ -205,6 +205,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CodeMaid.vsct</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\AlphanumericComparator.cs" />
     <Compile Include="Helpers\CodeLanguageHelper.cs" />
     <Compile Include="Helpers\CodeLanguage.cs" />
     <Compile Include="Helpers\CodeMaidSettingsProvider.cs" />
@@ -396,6 +397,7 @@
     <Compile Include="UI\Dialogs\Options\ISettingToOptionMapping.cs" />
     <Compile Include="UI\Dialogs\Options\SettingToOptionMapping.cs" />
     <Compile Include="UI\Dialogs\Options\SettingsToOptionsList.cs" />
+    <Compile Include="UI\Dialogs\Options\Sorting\SortingViewModel.cs" />
     <Compile Include="UI\Dialogs\Options\ThirdParty\ThirdPartyViewModel.cs" />
     <Compile Include="UI\Dialogs\Options\Digging\DiggingViewModel.cs" />
     <Compile Include="UI\Dialogs\Options\General\GeneralViewModel.cs" />
@@ -747,6 +749,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UI\Dialogs\Options\General\FeaturesDataTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Dialogs\Options\Sorting\SortingDataTemplate.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

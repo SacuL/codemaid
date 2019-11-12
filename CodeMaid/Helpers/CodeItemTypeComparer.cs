@@ -50,9 +50,12 @@ namespace SteveCadwallader.CodeMaid.Helpers
             if (first == second)
             {
                 // Check if secondary sort by name should occur.
-                if (_sortByName)
+                if (_sortByName || Settings.Default.Sorting_AlphanumericSorting)
                 {
-                    int nameComparison = NormalizeName(x).CompareTo(NormalizeName(y));
+                    string nameX = NormalizeName(x);
+                    string nameY = NormalizeName(y);
+                    int nameComparison = Settings.Default.Sorting_AlphanumericSorting ? new AlphanumComparator().Compare(nameX, nameY) :
+                        nameX.CompareTo(nameY);
                     if (nameComparison != 0)
                     {
                         return nameComparison;

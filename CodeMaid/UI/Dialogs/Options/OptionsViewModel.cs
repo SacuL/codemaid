@@ -8,6 +8,7 @@ using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Formatting;
 using SteveCadwallader.CodeMaid.UI.Dialogs.Options.General;
 using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Progressing;
 using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Reorganizing;
+using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Sorting;
 using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Switching;
 using SteveCadwallader.CodeMaid.UI.Dialogs.Options.ThirdParty;
 using System;
@@ -81,6 +82,7 @@ namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options
                                     new ReorganizingRegionsViewModel(package, ActiveSettings)
                                 }
                             },
+                            new SortingViewModel(package, ActiveSettings),
                             new SwitchingViewModel(package, ActiveSettings),
                             new ThirdPartyViewModel(package, ActiveSettings)
                         };

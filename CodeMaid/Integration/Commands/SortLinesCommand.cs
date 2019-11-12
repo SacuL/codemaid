@@ -103,7 +103,7 @@ namespace SteveCadwallader.CodeMaid.Integration.Commands
 
             // Create the sorted text lines.
             var splitText = selectedText.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
-            var orderedText = splitText.OrderBy(x => x);
+            var orderedText = Settings.Default.Sorting_AlphanumericSorting ? splitText.OrderBy(x => x, new AlphanumComparator()) : splitText.OrderBy(x => x);
 
             var sb = new StringBuilder();
             foreach (var line in orderedText)

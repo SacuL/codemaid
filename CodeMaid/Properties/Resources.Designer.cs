@@ -2096,6 +2096,15 @@ namespace SteveCadwallader.CodeMaid.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sorting.
+        /// </summary>
+        public static string SortingViewModel_Sorting {
+            get {
+                return ResourceManager.GetString("SortingViewModel_Sorting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sort Lines.
         /// </summary>
         public static string SortLines {
@@ -2335,6 +2344,15 @@ namespace SteveCadwallader.CodeMaid.Properties {
         public static string UpdateSingleLineMethodsByPlacingBracesOnSeparateLinesSA1502 {
             get {
                 return ResourceManager.GetString("UpdateSingleLineMethodsByPlacingBracesOnSeparateLinesSA1502", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use alphanumeric sorting in all sort operations.
+        /// </summary>
+        public static string UseAlphanumericSortingInAllSortOperations {
+            get {
+                return ResourceManager.GetString("UseAlphanumericSortingInAllSortOperations", resourceCulture);
             }
         }
         

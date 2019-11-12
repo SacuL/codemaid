@@ -1942,7 +1942,22 @@ namespace SteveCadwallader.CodeMaid.Properties {
                 this["Reorganizing_RunAtStartOfCleanup"] = value;
             }
         }
-        
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Sorting_AlphanumericSorting
+        {
+            get
+            {
+                return ((bool)(this["Sorting_AlphanumericSorting"]));
+            }
+            set
+            {
+                this["Sorting_AlphanumericSorting"] = value;
+            }
+        }
+
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute(".cpp .h||.xaml .xaml.cs||.xml .xsd||.ascx .ascx.cs||.aspx .aspx.cs||.master .mast" +

@@ -795,6 +795,9 @@
   <data name="Sort" xml:space="preserve">
     <value>Sort</value>
   </data>
+  <data name="SortingViewModel_Sorting" xml:space="preserve">
+    <value>Sorting</value>
+  </data>
   <data name="SortLines" xml:space="preserve">
     <value>Sort Lines</value>
   </data>
@@ -875,6 +878,9 @@
   </data>
   <data name="UpdateSingleLineMethodsByPlacingBracesOnSeparateLinesSA1502" xml:space="preserve">
     <value>Update single line methods by placing braces on separate lines (SA1502)</value>
+  </data>
+  <data name="UseAlphanumericSortingInAllSortOperations" xml:space="preserve">
+    <value>Use alphanumeric sorting in all sort operations</value>
   </data>
   <data name="UserSettings" xml:space="preserve">
     <value>User Settings</value>
